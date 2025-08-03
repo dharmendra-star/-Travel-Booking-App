@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Your Trip</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Book Your Travel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="book.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="booking-form">
+    <form onsubmit="submitBooking(event)">
+      <label>Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label>Destination:</label>
+      <select id="destination">
+        <option>Paris</option>
+        <option>Maldives</option>
+        <option>Dubai</option>
+        <option>Nepal</option>
+        <option>USA</option>
+        <option>Chaina</option>
+      </select>
+
+      <label>Travel Date:</label>
+      <input type="date" id="date" required />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking Confirmed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Booking Confirmation</h1>
+  </header>
+
+  <main class="confirmation">
+    <h2>Thank you, <span id="user-name"></span>!</h2>
+    <p>Your trip to <span id="user-destination"></span> on <span id="user-date"></span> is confirmed.</p>
+    <a href="index.html" class="btn">Return Home</a>
+  </main>
+
+  <script>
+    document.getElementById("user-name").textContent = localStorage.getItem("name");
+    document.getElementById("user-destination").textContent = localStorage.getItem("destination");
+    document.getElementById("user-date").textContent = localStorage.getItem("date");
+  </script>
+</body>
+</html>
